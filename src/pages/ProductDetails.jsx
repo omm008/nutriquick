@@ -30,12 +30,14 @@ const ProductDetails = () => {
         Loading...
       </div>
     );
+  const bg = product.bg;
+  const bgColorStyle = { backgroundColor: bg }; // Use inline style instead
 
   // 2. DYNAMIC BRAND THEMING
   const isAffinito = product.brand === "affinito";
 
   const theme = {
-    bg: isAffinito ? "bg-rose-50" : "bg-orange-50",
+    bgStyle: bgColorStyle,
     textMain: isAffinito ? "text-rose-950" : "text-stone-900",
     textAccent: isAffinito ? "text-rose-600" : "text-orange-600",
     btnPrimary: isAffinito
@@ -50,7 +52,8 @@ const ProductDetails = () => {
 
   return (
     <div
-      className={`min-h-screen ${theme.bg} pt-24 pb-12 transition-colors duration-500`}
+      className="min-h-screen pt-24 pb-12 transition-colors duration-500"
+      style={theme.bgStyle}
     >
       {/* Back Button */}
       <div className="max-w-7xl mx-auto px-6 mb-8">
@@ -71,7 +74,8 @@ const ProductDetails = () => {
           className="sticky top-32"
         >
           <div
-            className={`relative aspect-square w-full ${theme.bg} overflow-hidden ${theme.shape} shadow-xl border-4 border-white`}
+            className={`relative aspect-square w-full overflow-hidden ${theme.shape} shadow-xl border-4 border-white`}
+            style={theme.bgStyle}
           >
             {/* Brand Watermark */}
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-9xl font-black opacity-[0.03] pointer-events-none uppercase whitespace-nowrap">

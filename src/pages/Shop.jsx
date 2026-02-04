@@ -42,7 +42,11 @@ const Shop = () => {
       <div className="max-w-7xl mx-auto mb-16 flex flex-col md:flex-row justify-between items-end gap-8">
         <div>
           <h1 className="text-5xl md:text-7xl font-serif text-stone-900 mb-4">
-            The Pantry
+            {getActiveFilter() === "nutriquick"
+              ? "NutriQuick"
+              : getActiveFilter() === "affinito"
+                ? "Affinito"
+                : " All Products"}
           </h1>
           <p className="text-stone-500 max-w-md text-lg">
             Curated essentials for the modern traveler. Whether you need a full

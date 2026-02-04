@@ -27,6 +27,7 @@ export const products = [
     image1: mangoBites1,
     image2: mangoChunk1, // Hover image
     weight: "30g",
+    bg: "#FBEF76",
     isNew: true,
   },
   {
@@ -38,6 +39,7 @@ export const products = [
     image1: jamunBites1,
     image2: jamunChunk1,
     weight: "30g",
+    bg: "#511D43",
     isNew: false,
   },
   {
@@ -49,6 +51,7 @@ export const products = [
     image1: chikuBites1,
     image2: chikuBites1,
     weight: "30g",
+    bg: "#8A784E",
     isNew: false,
   },
   {
@@ -60,6 +63,7 @@ export const products = [
     image1: sitafal1,
     image2: sitafal1,
     weight: "25g",
+    bg: "#84994F",
     isNew: true,
   },
   {
@@ -71,6 +75,7 @@ export const products = [
     image1: strawberryBites1,
     image2: strawberryBites1,
     weight: "20g",
+    bg: "#CD5656",
     isNew: false,
   },
 
