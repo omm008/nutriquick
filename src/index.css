@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* optional global styles */
+html,
+body {
+  height: 100%;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
