@@ -11,3 +11,16 @@ body {
 ::-webkit-scrollbar {
   width: 0;
 }
+
+.cooler {
+  animation: coolers 2s infinite ease-in-out forwards;
+}
+
+@keyframes coolers {
+  50% {
+    color: #3ff7f7;
+  }
+  100% {
+    color: #e6e9f9;
+  }
+}
